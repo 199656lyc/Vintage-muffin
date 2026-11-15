@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cinema Info - Vintage Muffin Cinema</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Vintage Muffin Cinema</h1>
+        <p>About Our Cinema</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="now-showing.html">Now Showing</a>
+        <a href="ticket-price.html">Ticket Price</a>
+        <a href="cinema-info.html">Cinema Info</a>
+    </nav>
+
+    <main>
+
+        <h2>About Us</h2>
+
+        <p>
+            Vintage Muffin Cinema is a small and friendly
+            cinema created for people who love movies.
+            We provide a cosy atmosphere where customers
+            can relax and enjoy a great movie experience.
+        </p>
+
+        <h2>Opening Hours</h2>
+
+        <table>
+            <tr>
+                <th>Day</th>
+                <th>Opening Hours</th>
+            </tr>
+
+            <tr>
+                <td>Monday - Friday</td>
+                <td>10:00 AM - 10:00 PM</td>
+            </tr>
+
+            <tr>
+                <td>Saturday - Sunday</td>
+                <td>9:00 AM - 11:00 PM</td>
+            </tr>
+        </table>
+
+        <h2>Contact Us</h2>
+
+        <p>Email: info@vintagemuffincinema.com</p>
+        <p>Phone: 0400 123 456</p>
+        <p>Location: Melbourne, Australia</p>
+
+        <h2>Send Us an Enquiry</h2>
+
+        <form onsubmit="alert('Thank you for contacting us!'); return false;">
+
+            <label for="fname">First Name:</label>
+            <br>
+            <input type="text" id="fname"
+                   name="fname" required>
+
+            <br><br>
+
+            <label for="email">Email Address:</label>
+            <br>
+            <input type="email" id="email"
+                   name="email" required>
+
+            <br><br>
+
+            <label for="message">Your Message:</label>
+            <br>
+            <textarea id="message" name="message"
+                      rows="5" required></textarea>
+
+            <br><br>
+
+            <input type="submit" value="Submit">
+
+        </form>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Vintage Muffin Cinema</p>
+    </footer>
+
+</body>
+</html>

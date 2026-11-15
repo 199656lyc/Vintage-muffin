@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ticket Price - Vintage Muffin Cinema</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Vintage Muffin Cinema</h1>
+        <p>Ticket Prices</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="now-showing.html">Now Showing</a>
+        <a href="ticket-price.html">Ticket Price</a>
+        <a href="cinema-info.html">Cinema Info</a>
+    </nav>
+
+    <main>
+
+        <h2>Our Ticket Prices</h2>
+
+        <p>
+            We offer affordable ticket prices
+            for everyone to enjoy!
+        </p>
+
+        <table>
+            <tr>
+                <th>Ticket Type</th>
+                <th>Price</th>
+            </tr>
+
+            <tr>
+                <td>Adult</td>
+                <td>$20</td>
+            </tr>
+
+            <tr>
+                <td>Child</td>
+                <td>$12</td>
+            </tr>
+
+            <tr>
+                <td>Student</td>
+                <td>$15</td>
+            </tr>
+
+            <tr>
+                <td>Senior</td>
+                <td>$15</td>
+            </tr>
+        </table>
+
+        <h2>Ticket Price Calculator</h2>
+
+        <p>Calculate your total ticket cost below.</p>
+
+        <label for="adult">Number of Adult Tickets:</label>
+        <input type="number" id="adult" value="0" min="0">
+
+        <br><br>
+
+        <label for="child">Number of Child Tickets:</label>
+        <input type="number" id="child" value="0" min="0">
+
+        <br><br>
+
+        <button onclick="calculatePrice()">
+            Calculate Total
+        </button>
+
+        <h3 id="result">Total Price: $0</h3>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Vintage Muffin Cinema</p>
+    </footer>
+
+</body>
+</html>

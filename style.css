@@ -1,0 +1,233 @@
+
+/* GENERAL WEBSITE STYLE */
+
+body {
+    margin: 0;
+    font-family: Georgia, serif;
+    background-color: #EAE5D9;
+    color: #252D32;
+}
+
+
+/* WEBSITE HEADER */
+
+header {
+    background-color: #EAE5D9;
+    text-align: center;
+    padding: 25px;
+}
+
+header h1 {
+    color: #252D32;
+    font-size: 32px;
+    letter-spacing: 3px;
+    margin-bottom: 8px;
+}
+
+header p {
+    color: #526B70;
+    font-size: 13px;
+    letter-spacing: 2px;
+}
+
+
+/* NAVIGATION BAR */
+
+nav {
+    background-color: #252D32;
+    text-align: center;
+    padding: 18px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #B8C9C5;
+}
+
+
+/* MAIN BANNER */
+
+.banner {
+    position: relative;
+    height: 430px;
+    overflow: hidden;
+    background-color: #252D32;
+}
+
+.banner-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    filter: brightness(60%);
+}
+
+.banner-content {
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    transform: translateY(-50%);
+    color: white;
+    max-width: 550px;
+}
+
+.banner-content h2 {
+    font-size: 38px;
+    color: white;
+}
+
+.banner-content p {
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+
+/* BUTTONS */
+
+.button {
+    display: inline-block;
+    background-color: #A66C57;
+    color: white;
+    padding: 13px 24px;
+    text-decoration: none;
+    margin-top: 15px;
+}
+
+.button:hover {
+    background-color: #526B70;
+}
+
+
+/* MAIN CONTENT */
+
+main {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.featured,
+.sessions,
+.experience {
+    padding: 35px 0;
+}
+
+h2 {
+    color: #252D32;
+}
+
+
+/* MOVIE POSTERS */
+
+.movies {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.movie {
+    width: 200px;
+}
+
+.movie img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+}
+
+.movie h3 {
+    color: #526B70;
+}
+
+.movie a {
+    color: #A66C57;
+}
+
+
+/* MOVIE SESSION TABLE */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #C5C0B5;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #526B70;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #F5F1E8;
+}
+
+
+/* CINEMA EXPERIENCE */
+
+.experience {
+    background-color: #D9DFD9;
+    text-align: center;
+    padding: 35px;
+    margin-bottom: 30px;
+}
+
+
+/* FOOTER */
+
+footer {
+    background-color: #252D32;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+footer a {
+    color: #D9DFD9;
+    text-decoration: none;
+}
+
+
+/* MOBILE RESPONSIVE DESIGN */
+
+@media screen and (max-width: 600px) {
+
+    header h1 {
+        font-size: 23px;
+    }
+
+    nav a {
+        display: block;
+        margin: 12px;
+    }
+
+    .banner {
+        height: 350px;
+    }
+
+    .banner-content {
+        left: 5%;
+        right: 5%;
+    }
+
+    .banner-content h2 {
+        font-size: 27px;
+    }
+
+    .movies {
+        justify-content: center;
+    }
+
+}
